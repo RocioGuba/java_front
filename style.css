@@ -1,0 +1,88 @@
+*{
+    margin: 0 5 5;
+}
+
+/*******HEADER***********/
+.navbar{
+color: aliceblue;
+background-color: rgba(36, 35, 35, 0.803);
+}
+
+
+/******CARROUSEL*******/
+
+.carousel-caption h1{
+    font-size: 40px;
+    position: absolute;
+    bottom: 700%;
+    left: 80%;
+    right: 0;
+    width: fit-content;
+    height: 300px;
+    text-align-last: right;
+}
+
+.carousel-caption h4{
+    font-size: 18px;
+    position: absolute;
+    bottom: 450%;;
+    left: auto;
+    width: fit-content;
+    height: 400px;
+    padding: 60px 5px 40px 500px;
+    text-align-last: right;
+}
+
+.botones{
+    font-size: 18px;
+    position: absolute;
+    bottom: 150%;
+    left: auto;
+    width: fit-content;
+    height: 400px;
+    padding: 60px 5px 40px 500px;
+    text-align-last: right;
+}
+
+.carousel-caption h1, h4{
+    color: white;
+}
+
+/*********CARDS******/
+.oradores{
+    margin: 2% 5% ;
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+/*********************IMG**********************/
+
+.honolulu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-fondo{   
+    color: aliceblue;
+    background-color: rgb(50, 52, 52); 
+}
+.info-fondo h2, p{
+    height: 10%;
+    
+}
+
+/******FOOTER*****/
+.footer{
+    background-color: rgb(26, 86, 119);
+    padding-top: 50px;
+}
