@@ -81,6 +81,112 @@ background-color: rgba(36, 35, 35, 0.803);
     
 }
 
+#color-boton{
+    background-color: #97C93E;
+}
+
+
+
+/********RESUMEN************************/
+.form-ticket{
+    width: 400px !important;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.card-tickets{
+    width: 12rem;
+    height: 11rem;
+    margin: 3px;
+}
+
+
+#cardticket1{
+    border: 1px solid #007BFF
+}
+
+#cardticket2{
+    border: 1px solid #17A2B8
+}
+
+#cardticket3{
+    border: 1px solid #FFC107
+}
+
+.card-body-ticket{
+    display: block;
+    text-align: center;
+    padding-top: 21px;
+}
+
+#inputNombre{
+    width: 95%;
+}
+
+#inputApellido{
+    width: 95%;
+}
+
+#inputAddress{
+    margin-left: -8px !important;
+
+}
+
+#inputCategoria{
+    width: 380px !important;
+}
+
+#label-cantidad{
+    float: left;
+}
+
+.card-ticket-descuento{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.documentacion{
+    font-size: 0.8rem;
+    color: #868686;
+}
+
+.cointainer-pagar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.titulo-valor-ticket{
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+
+.pagar{
+    background-color: #CCE5FF;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    padding: 7px;
+    margin-right: 10px;
+    width: 580px;
+}
+
+#boton-borrar, #boton-resumen{
+    background-color: #97C93E;
+    border: none;
+    width: 285px;
+    margin: 3px;
+    margin-bottom: 17px;
+}
+
+
 /******FOOTER*****/
 .footer{
     background-color: rgb(26, 86, 119);

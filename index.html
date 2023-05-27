@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!---------------------- HEADER----------------------------->
   <header>
     <nav class="navbar navbar-expand-sm">
 
@@ -27,23 +29,23 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">La confederacion</a>
+              <a class="nav-link" href="#confederacion" style="color: white;">La confederacion</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color:grey" id="oradores">Los oradores</a>
+              <a class="nav-link" href="#losoradores" style="color:grey" id="oradores">Los oradores</a>
             </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#" style="color:grey">El lugar y la fecha</a>
+                <a class="nav-link" href="#fechayhora" style="color:grey">El lugar y la fecha</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#" style="color:grey">Conviértete en orador</a>
+                <a class="nav-link" href="#formulario" style="color:grey">Conviértete en orador</a>
               </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: rgb(53, 184, 53);">Comprar tickets</a>
+              <a class="nav-link" href="#ticket" style="color: rgb(53, 184, 53);">Comprar tickets</a>
             </li>  
             
           </ul>
@@ -53,7 +55,8 @@
     </nav>
   </header>
 
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <!---------------------- CAROUSEL----------------------------->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" id="confederacion">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -103,10 +106,13 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </div>
 
-  <section class="cards">
+  <!---------------------- ORADORES----------------------------->
 
-<div class="oradores" id="oradores">
+  <section class="cards" id="losoradores">
+
+<div class="oradores">
   <p style="color: black;"> CONOCE A LOS </p>
   <h1>ORADORES</h1>
 </div>
@@ -140,8 +146,8 @@
       </div>
 </section>
 
-
-<section class="honolulu">
+<!---------------------- FECHA Y HORA----------------------------->
+<section class="honolulu" id="fechayhora">
 
           <div class="col-md-6">
             <img src="./assets/honolulu.jpg" class="img-fluid rounded-start" alt="...">
@@ -154,7 +160,8 @@
           </div>
 </section>
 
-<section>
+<!---------------------- FORMULARIO----------------------------->
+<section id="formulario">
   <div class="container text-center">
     <p> CONVIERTETE EN </p>
   <h1>ORADOR</h1>
@@ -176,12 +183,104 @@
     <div> Recuerda incluir un título para tu charla</div>
   </div>
   <div class="d-grid md-3">
-    <button class="btn btn-success" type="button">Button</button>
+    <button class="btn btn-success" id="color-boton" type="button">Button</button>
   </div>
   </div>
 </form>
 </section>
 
+<!---------------------- TICKET----------------------------->
+         <div class="container text-center" id="ticket">
+          <div>
+            <div class="cards">
+              <div class="card-tickets" id="cardticket1" >
+                <div class="card-body-ticket">
+                  <h4 class="card-title-ticket">Estudiantes</h4>
+                  <span class="card-text-ticket">
+                    Tiene un descuento
+                  </span>
+                  <p class="card-ticket-descuento">
+                    80%
+                  </p>
+                  <p class="documentacion">*Presentar documentación</p>
+                </div>
+              </div>
+              <div class="card-tickets" id="cardticket2">
+                <div class="card-body-ticket">
+                  <h4 class="card-title-ticket">Trainee</h4>
+                  <span class="card-text-ticket">
+                    Tiene un descuento
+                  </span>
+                  <p class="card-ticket-descuento">
+                    50%
+                  </p>
+                  <p class="documentacion">*Presentar documentación</p>
+              </div>
+          </div>
+          <div class="card-tickets" id="cardticket3">
+            <div class="card-body-ticket">
+              <h4 class="card-title-ticket">Junior</h4>
+              <span class="card-text-ticket">
+                Tiene un descuento
+              </span>
+              <p class="card-ticket-descuento">
+                15%
+              </p>
+              <p class="documentacion">*Presentar documentación</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="titulo-valor-ticket">
+        <span>VENTA </span>
+          <h2>VALOR DE TICKET $200</h2>
+        </div>
+      <div class="container form-ticket">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text"  class="form-control" id="inputNombre" placeholder="Nombre">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+      </div>
+      <div class="col-12">
+        <input type="email"  class="form-control" id="inputAddress" placeholder="Correo">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCantidad" id="label-cantidad" class="form-label">Cantidad</label>
+        <input type="text" class="form-control" id="inputCantidad">
+      </div>
+      <div class="col-md-4">
+        <label for="inputCategoria" id="label-cantidad" class="form-label">Categoria</label>
+        <select id="inputCategoria" class="form-select">
+          <option selected>Opciones...</option>
+          <option>
+            Estudiante
+          </option>
+          <option>
+            Trainee
+          </option>
+          <option>
+            Junior
+          </option>
+        </select>
+  
+      </div>
+      <div class="col-12">
+        <div class="cointainer-pagar"><span id="totalAPagar" class="pagar">Total a Pagar: $ </span></div>
+      </div>
+   
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" id="boton-borrar" type="button">Borrar</button>
+        <button class="btn btn-primary" id="boton-resumen" type="button">Resumen</button>
+      </div>
+  </form>
+  </div>
+  </div>
+
+  <!---------------------- FOOTER---------------------------->
     <footer class="footer">
 
       <ul class="nav justify-content-center">
@@ -212,5 +311,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+  </script><script src="script.js"></script>
+  </body>
 </html>
